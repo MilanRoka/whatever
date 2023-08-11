@@ -1,6 +1,3 @@
-import Lottie from "lottie-react"
-import animationData from "../assets/animation4.json"
-
 const products = [
     {
         id: 1,
@@ -21,36 +18,29 @@ const products = [
 const Project = () => {
     return (
         <div id="projects">
-            <h1 id='projects' className="pt-9 text-1xl text-center font-bold text-gray-400 lg:pt-20 sm:text-4xl">Project</h1>
-            <div className="">
-                <div className="mx-auto max-w-sm py-32 sm:py-1 lg:py-1 sm:flex sm:justify-end">
-                    <Lottie
-                        animationData={animationData}
-                    />
-                </div>
-                <div className="bg-transparent">
-                    <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                        <h2 className="sr-only">Products</h2>
+    <h1 id="projects" className="pt-9 text-1xl text-center font-bold text-gray-400 lg:pt-20 sm:text-4xl">Projects</h1>
 
-                        <div className="justify-center flex flex-row gap-x-6 gap-y-10 sm:xl:gap-x-8">
-                            {products.map((product) => (
-                                <a key={product.id} href={product.href} className="group">
-                                    <div className="h-72 w-96">
-                                        <img
-                                            src={product.imageSrc}
-                                            className="h-full w-full object-fit object-center group-hover:opacity-75"
-                                        />
-                                    </div>
-                                    <h3 className="mt-4 text-sm font-extrabold text-orange-500">{product.name}</h3>
-                                    <h2 className="mt-4 text-sm text-white">{product.description}</h2>
-                                    <p className="mt-1 text-lg font-medium text-white">{product.price}</p>
-                                </a>
-                            ))}
+    <div className="flex justify-center bg-transparent">
+        <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
+            <div className="sm:pl-80 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {products.map((product) => (
+                    <a key={product.id} href={product.href} className="group">
+                        <div className="h-64 sm:h-72 bg-gray-100 rounded-lg overflow-hidden">
+                            <img
+                                src={product.imageSrc}
+                                className="h-full w-full object-cover object-center group-hover:opacity-75"
+                                alt={product.name}
+                            />
                         </div>
-                    </div>
-                </div>
+                        <h3 className="mt-3 text-base font-semibold text-orange-500">{product.name}</h3>
+                        <p className="mt-2 text-sm text-gray-300">{product.description}</p>
+                    </a>
+                ))}
             </div>
         </div>
+    </div>
+</div>
+
     )
 }
 
