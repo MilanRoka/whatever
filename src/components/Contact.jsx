@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react'
 import { Switch } from '@headlessui/react'
 import { FcCellPhone } from 'react-icons/fc';
