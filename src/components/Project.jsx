@@ -4,14 +4,14 @@ const products = [
         name: 'Kaar-Culator',
         href: '#',
         description: 'Worked as a Frontend Developer for Tax Calculator System "Kaar-Culator" ',
-        imageSrc: 'http://localhost:5173/project1.png',
+        imageSrc: '/project1.png',
     },
     {
         id: 2,
         name: 'bookHostel',
         href: '#',
         description: 'Developed a whole Hostel Booking System as Final Year Student',
-        imageSrc: 'http://localhost:5173/back2.jpg',
+        imageSrc: '/back2.jpg',
     },
 ]
 
