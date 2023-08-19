@@ -64,7 +64,7 @@ const Hero = () => {
               <a href="#home" className="-m-1.5 p-1.5">
                 <img
                   className={`h-8 sm:h-8 md:h-10 lg:h-12 w-auto ${isScrolled ? 'opacity-100' : 'opacity-100'}`}
-                  src="http://localhost:5173/brand.svg"
+                  src="/brand.svg"
                   alt=""
                 />
               </a>
@@ -97,7 +97,7 @@ const Hero = () => {
                 <a href="/" className="-m-1.5 p-1.5 ">
                   <img
                     className=" h-8 w-auto"
-                    src="http://localhost:5173/brand.svg"
+                    src="/brand.svg"
                     alt=""
                   />
                 </a>
