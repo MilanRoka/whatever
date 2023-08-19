@@ -153,7 +153,7 @@ const Hero = () => {
             />
             <BsGithub
               onClick={
-                () => window.open('https://github.com/MilanRoka97')}
+                () => window.open('https://github.com/MilanRoka')}
               className='cursor-pointer' />
             <TfiEmail
               onClick={
