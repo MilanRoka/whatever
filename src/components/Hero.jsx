@@ -140,9 +140,9 @@ const Hero = () => {
               <h1 className="text-4xl font-bold tracking-tight text-green-400 sm:text-4xl">
                 <Animation />
               </h1>
-              <p className="text-xl mt-6 leading-8 text-gray-400">
+              <h1 className="text-xl mt-6 leading-8 text-gray-400">
                 I make the Complex - Simple !
-              </p>
+              </h1>
             </div>
           </div>
           <div className='text-2xl lg:gap-x-12 py-5 flex gap-x-5 sm:text-4xl sm:flex sm:justify-center text-orange-500'>
